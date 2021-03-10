@@ -1,5 +1,38 @@
-.App {
-  text-align: center;
+body {
+  background-color: #404040;
+  
+}
+.container {
+    background-color: #fff;
+    min-height: 70vh;
+    min-width: 500px;
+    padding:25px;
+}
+
+.container h1,
+.container h2,
+.container h3 {
+  padding-top:15px;
+}
+
+.poll-header input {
+  width:100%;
+  font-size: 2em;
+}
+
+.poll-option {
+  font-size: 1.4em;
+  margin-top:10px;
+}
+
+.poll-option label {
+  font-weight: bold;
+  display:inline-block;
+  width:15%;
+}
+
+.poll-option input {
+  width:85%;
 }
 
 .App-logo {
@@ -35,4 +68,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav li {
+
 }
