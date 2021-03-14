@@ -10,7 +10,7 @@ const Option = (props: Props) => {
     return (
         <div className="poll-option">
             <label >Option {count + 1}:</label>
-            <input type="text" id={`label-${count}`} name="option" placeholder="Fill This Field" />
+            <input type="text" name="poll-option" placeholder="Fill This Field" {...((count === 0) ? 'required' : '')} />
             
         </div>
     )
