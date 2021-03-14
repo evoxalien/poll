@@ -6,6 +6,7 @@ import { API } from "aws-amplify";
 type tOption = {
   value: string;
   id: string;
+  count: number;
 };
 
 type tPoll = {
@@ -33,6 +34,7 @@ const Poll = () => {
         submittedPoll.options.push({
           value: event.target["poll-option"][i].value,
           id: submittedPoll.id,
+          count: 0
         });
       }
     }
