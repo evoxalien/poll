@@ -7,7 +7,7 @@ import { ModelInit, MutableModel, PersistentModelConstructor } from "@aws-amplif
 export declare class Option {
   readonly id: string;
   readonly value: string;
-  readonly count: string;
+  readonly count: number;
   readonly pollID: string;
   constructor(init: ModelInit<Option>);
   static copyOf(source: Option, mutator: (draft: MutableModel<Option>) => MutableModel<Option> | void): Option;

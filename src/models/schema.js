@@ -20,7 +20,7 @@ export const schema = {
                 "count": {
                     "name": "count",
                     "isArray": false,
-                    "type": "String",
+                    "type": "Int",
                     "isRequired": true,
                     "attributes": []
                 },
@@ -126,5 +126,5 @@ export const schema = {
     },
     "enums": {},
     "nonModels": {},
-    "version": "a076947e9454a1358dc75bceea4577ce"
+    "version": "1474b3f2bb7c1116116ae4aad52bd226"
 };

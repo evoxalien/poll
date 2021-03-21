@@ -1,7 +1,7 @@
 type Option @model @auth(rules: [{allow: public}]) @key(name: "byPoll", fields: ["pollID"]) {
   id: ID!
   value: String!
-  count: String!
+  count: Int!
   pollID: ID!
 }
 
@@ -10,3 +10,4 @@ type Poll @model @auth(rules: [{allow: public}]) {
   Title: String!
   Options: [Option!] @connection(keyName: "byPoll", fields: ["id"])
 }
+ 

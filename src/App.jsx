@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 
-import Poll from "./components/Poll";
+import RenderPoll from "./components/RenderPoll";
 
 import Amplify from "aws-amplify";
 import awsconfig from "./aws-exports";
@@ -53,7 +53,7 @@ function NewPoll() {
   return (
     <>
       <h2>New Poll</h2>
-      <Poll />
+      <RenderPoll />
     </>
   );
 }
